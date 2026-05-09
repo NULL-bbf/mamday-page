@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>母亲节快乐！</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #ffe4e1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      color: #ff69b4;
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .flower {
+      width: 100px;
+      animation: float 3s infinite ease-in-out;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    button {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    .surprise {
+      margin-top: 20px;
+      font-size: 2em;
+      color: #ff1493;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>妈妈，母亲节快乐！❤️</h1>
+  <!-- 嵌入可爱花朵图片 -->
+  <img class="flower" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAADzG3bBAAAAM1BMVEUAAAD///+rq6vFxcX19fXo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6P/sXjRAAAAEXRSTlMAEBAgIDAwQEBQUGBgcHCAoK0O1nAAACl0lEQVR4nO3c2XLCIAwF0FAbF2f//dLYJZtBW2jPpmWns1TJEs/ibndOTkQ0AAAAAAAAAAAAAAAAAAgBtv2xpu/fF7bC+Mn9rS+8+V6t8Onlsz+fvk9tV81Z87rePtOPrZ3/euv1tW7K+TntP39pnXe/MFfX77u+KzW2p99F/z/j6QeX0s9sfGzv6+2i1xqGf5vj3j5L9P/PoU/o7B++fbkfLh/dw1p+D2r9HXZx+6CdbNv7P3bbflO8b9f+R5V6v+FzXtd4vtf6/JYf7sjhxnT+fm18Z+ox7R+7f7fR/fI9n/Zf3jZb/E+P9XuB+//nHZ7rd/4fJ5/FuQfZy/v9zh6b7nveRe+P1mf2C+bkfGH+Z/Ml7/ub8yfsl/8Z/5X8t9f+rPf8Xfr+0L+r/P6/6r99o0vbMzJk8AAAAAAAAAAAAAAAAA4B8F9AADXx6J6Lf0sbAAAAAElFTkSuQmCC" alt="可爱花朵">
+  <button onclick="showSurprise()">点我有惊喜！🎁</button>
+  <div class="surprise" id="surprise">🌸 祝妈妈永远开心快乐！🌸</div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
